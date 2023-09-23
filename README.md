@@ -20,7 +20,7 @@ This application showcasing
 - Run the API project run: `npm run develop`
 - On the App project run: `flutter run`
 
-After the API running, you can check the `localhost:8000/admin` to view dashboard
+After the API running, you can check the `localhost:1337/admin` to view dashboard
 
 ## How to Build (Production)
 
