@@ -19,13 +19,13 @@ class _EmployeeInputPageState extends State<EmployeeInputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Create new user")),
+      appBar: AppBar(title: const Text("Create new user")),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16),
           child: Form(
             key: _formKey,
-            child: Column(
+            child: const Column(
               children: [
                 // TODO LEON: Buat form input user baru (sama kayak form register)
               ],

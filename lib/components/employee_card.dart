@@ -33,11 +33,11 @@ class EmployeeCard extends StatelessWidget {
             children: [
               Text(
                 employee.username ?? '',
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 'Manager - Jakarta',
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),

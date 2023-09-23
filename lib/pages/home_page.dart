@@ -5,9 +5,7 @@ import 'package:app_presensi_pegawai/models/attendance.dart';
 import 'package:app_presensi_pegawai/models/submodels/user.dart';
 import 'package:app_presensi_pegawai/services/api/attendance.dart';
 import 'package:app_presensi_pegawai/services/api/user.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
@@ -46,27 +44,27 @@ class _HomePageState extends State<HomePage> {
         return AlertDialog(
           title: Text(
             attendance.office!.name,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headlineSmall,
           ),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
                 Text(
                   'Check In',
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 Text(
                   DateFormat("EEE, dd MMM yyyy @ kk:mm").format(
                     attendance.createdAt.toLocal(),
                   ),
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(
                   height: 16,
                 ),
                 Text(
                   'Check Out',
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 Text(
                   attendance.status == 'checkout'
@@ -74,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                           attendance.updatedAt.toLocal(),
                         )
                       : '-',
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),
@@ -82,7 +80,7 @@ class _HomePageState extends State<HomePage> {
           actions: <Widget>[
             TextButton(
               style: TextButton.styleFrom(
-                primary: Colors.white70,
+                foregroundColor: Colors.white70,
               ),
               child: const Text('Close'),
               onPressed: () {
@@ -92,7 +90,7 @@ class _HomePageState extends State<HomePage> {
             if (attendance.status == 'checkin')
               TextButton(
                 style: TextButton.styleFrom(
-                  primary: Colors.red,
+                  foregroundColor: Colors.red,
                 ),
                 child: const Text('Check Out'),
                 onPressed: () async {

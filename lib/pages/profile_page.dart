@@ -38,7 +38,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        padding: EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -55,11 +55,11 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(height: 16),
             Text(
               user?.username ?? '████',
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             Text(
               user?.email ?? '██████████',
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             const SizedBox(
               height: 32,
@@ -72,7 +72,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child: const Text("Dashboard"),
                   style: TextButton.styleFrom(
-                    minimumSize: Size(88, 48),
+                    minimumSize: const Size(88, 48),
                   ),
                 ),
                 const SizedBox(
@@ -80,8 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.red,
-                    onPrimary: Colors.white,
+                    foregroundColor: Colors.white, backgroundColor: Colors.red,
                   ),
                   onPressed: logout,
                   child: const Text("Logout"),

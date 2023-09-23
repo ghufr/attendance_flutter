@@ -47,7 +47,7 @@ class OfficeCard extends StatelessWidget {
                     Text(
                       office.attributes.address!.city ?? '',
                       textAlign: TextAlign.left,
-                      style: Theme.of(context).textTheme.subtitle2,
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ],
                 ),

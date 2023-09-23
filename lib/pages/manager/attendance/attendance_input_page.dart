@@ -12,11 +12,11 @@ class _AttendanceInputPageState extends State<AttendanceInputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Create New Attendance"),
+        title: const Text("Create New Attendance"),
       ),
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
+          child: const Column(
             children: [
               //
             ],

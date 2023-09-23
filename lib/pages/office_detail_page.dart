@@ -34,13 +34,13 @@ class _OfficeDetailPageState extends State<OfficeDetailPage> {
             snap: false,
             floating: false,
             expandedHeight: 220.0,
-            flexibleSpace: FlexibleSpaceBar(
+            flexibleSpace: const FlexibleSpaceBar(
               background: FlutterLogo(),
             ),
             actions: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   FeatherIcons.edit,
                 ),
               ),
@@ -54,7 +54,7 @@ class _OfficeDetailPageState extends State<OfficeDetailPage> {
                   height: 500,
                   decoration: BoxDecoration(
                     color: Colors.grey[900],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     ),
@@ -64,7 +64,7 @@ class _OfficeDetailPageState extends State<OfficeDetailPage> {
                     children: [
                       Text(
                         "SCBD Office",
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       ),
                       Row(
                         children: [
@@ -73,11 +73,11 @@ class _OfficeDetailPageState extends State<OfficeDetailPage> {
                             size: 16,
                             color: Theme.of(context).colorScheme.secondary,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text("DKI Jakarta"),
-                          SizedBox(
+                          const Text("DKI Jakarta"),
+                          const SizedBox(
                             width: 16,
                           ),
                           Icon(
@@ -85,21 +85,21 @@ class _OfficeDetailPageState extends State<OfficeDetailPage> {
                             size: 16,
                             color: Theme.of(context).colorScheme.secondary,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text("+6232323"),
+                          const Text("+6232323"),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Text(
                         "Address",
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
-                      Text("DKI Jakarta, 12033"),
-                      Text("Jl. Jenderal Sudirman No.Kav 52-53"),
+                      const Text("DKI Jakarta, 12033"),
+                      const Text("Jl. Jenderal Sudirman No.Kav 52-53"),
                     ],
                   ),
                 ),

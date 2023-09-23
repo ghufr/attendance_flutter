@@ -8,6 +8,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class ScanPage extends StatefulWidget {
+  const ScanPage({Key? key}) : super(key: key);
+
   @override
   State<ScanPage> createState() => _ScanPageState();
 }

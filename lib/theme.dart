@@ -1,10 +1,8 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
 final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
-  onPrimary: Colors.white,
-  primary: Colors.deepPurple,
+  foregroundColor: Colors.white, backgroundColor: Colors.deepPurple,
   minimumSize: const Size(88, 48),
   padding: const EdgeInsets.symmetric(horizontal: 16),
   shape: const RoundedRectangleBorder(
@@ -51,8 +49,8 @@ class ThemeClass {
       onPrimary: Colors.white,
     ),
     splashColor: Colors.deepPurple.withAlpha(40),
-    textTheme: TextTheme().copyWith(
-      headline5: TextStyle(
+    textTheme: const TextTheme().copyWith(
+      headlineSmall: const TextStyle(
         fontWeight: FontWeight.bold,
       ),
     ),
@@ -67,7 +65,7 @@ class ThemeClass {
       ),
     ),
     cardColor: Colors.black,
-    cardTheme: CardTheme(
+    cardTheme: const CardTheme(
       color: Colors.black,
     ),
     dialogTheme: DialogTheme(

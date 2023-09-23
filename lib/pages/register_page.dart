@@ -59,6 +59,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       if (value == null || value.isEmpty) {
                         return 'Please fill in the Username field';
                       }
+                      return null;
                     },
                     decoration: const InputDecoration(
                       fillColor: Colors.white10,
@@ -82,6 +83,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       if (value == null || value.isEmpty) {
                         return 'Please fill in the Email field';
                       }
+                      return null;
                     },
                     decoration: const InputDecoration(
                       fillColor: Colors.white10,
@@ -105,6 +107,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       if (value == null || value.isEmpty) {
                         return 'Please fill in the Password field';
                       }
+                      return null;
                     },
                     obscureText: true,
                     decoration: const InputDecoration(

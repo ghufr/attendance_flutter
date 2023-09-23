@@ -69,6 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                       if (value == null || value.isEmpty) {
                         return 'Please fill in the Email field';
                       }
+                      return null;
                     },
                     decoration: const InputDecoration(
                       fillColor: Colors.white10,
@@ -95,6 +96,7 @@ class _LoginPageState extends State<LoginPage> {
                       if (value == null || value.isEmpty) {
                         return 'Please fill in the Password field';
                       }
+                      return null;
                     },
                     obscureText: true,
                     decoration: const InputDecoration(

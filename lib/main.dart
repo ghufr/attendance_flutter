@@ -8,7 +8,6 @@ import 'package:app_presensi_pegawai/pages/login_page.dart';
 import 'package:app_presensi_pegawai/pages/register_page.dart';
 import 'package:app_presensi_pegawai/pages/scan_page.dart';
 
-import 'package:app_presensi_pegawai/pages/manager/attendance/attendance_input_page.dart';
 import 'package:app_presensi_pegawai/pages/manager/attendance/attendance_list_page.dart';
 
 import 'package:app_presensi_pegawai/pages/manager/employee/employee_input_page.dart';
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const MainPage(),
         '/login': (context) => const LoginPage(),
         '/register': (context) => const RegisterPage(),
-        '/scan': (context) => ScanPage(),
+        '/scan': (context) => const ScanPage(),
         '/office/detail': (context) => const OfficeDetailPage(),
         '/employee/detail': (context) => const EmployeeDetailPage(),
         '/manager/attendance/list': (context) => const AttendanceListPage(),

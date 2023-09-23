@@ -1,4 +1,3 @@
-import 'package:app_presensi_pegawai/models/submodels/attendance.dart';
 import 'package:app_presensi_pegawai/models/submodels/meta.dart';
 import 'package:app_presensi_pegawai/models/submodels/user.dart';
 import 'package:json_annotation/json_annotation.dart';

@@ -44,14 +44,14 @@ class AttendanceCard extends StatelessWidget {
               children: [
                 Text(
                   attendance.office!.name,
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 const SizedBox(height: 24),
                 Text(
                   DateFormat("EEE, dd MMM yyyy @ kk:mm").format(
                     attendance.updatedAt.toLocal(),
                   ),
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),

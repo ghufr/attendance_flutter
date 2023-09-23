@@ -36,13 +36,13 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
             snap: false,
             floating: false,
             expandedHeight: 220.0,
-            flexibleSpace: FlexibleSpaceBar(
+            flexibleSpace: const FlexibleSpaceBar(
               background: FlutterLogo(),
             ),
             actions: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   FeatherIcons.edit,
                 ),
               ),
@@ -66,9 +66,9 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                     children: [
                       Text(
                         "Employee 1",
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             FeatherIcons.mapPin,
@@ -91,11 +91,11 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                           Text("+6232323"),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text("Check In Time: 09.00"),
-                      Text("Check Out Time: 15.00"),
+                      const Text("Check In Time: 09.00"),
+                      const Text("Check Out Time: 15.00"),
                     ],
                   ),
                 ),

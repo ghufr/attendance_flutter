@@ -12,12 +12,12 @@ class _AttendanceListPageState extends State<AttendanceListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dashboard'),
+        title: const Text('Dashboard'),
       ),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16),
-          child: Column(
+          child: const Column(
             children: [
               Text("Hello World")
               // TODO LEON: Buat tampilan list kehadiran dari semua employee
